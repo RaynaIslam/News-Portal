@@ -1,0 +1,102 @@
+/* General container styling */
+.edit-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form header */
+.edit-form-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form labels */
+.edit-form label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+/* Input, select, and textarea styles */
+.edit-form input[type="text"],
+.edit-form textarea,
+.edit-form select,
+.edit-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Media previews */
+.edit-form img, .edit-form video {
+    max-width: 100px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Form actions */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Buttons */
+.edit-form .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Update button */
+.edit-form .update-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.edit-form .update-btn:hover {
+    background-color: #218838;
+}
+
+/* Cancel button */
+.edit-form .cancel-btn {
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+}
+
+.edit-form .cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .edit-form-container {
+        padding: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+
+.news-card h3 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.news-card a {
+    margin: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Style for videos in news cards */
+/* Ensure all images and videos have consistent styles */
+.news-card img, .news-card video {
+    max-width: 100% ;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+/* Add hover effect for videos */
+.news-card video {
+    transition: transform 0.3s ease;
+}
+
+.news-card video:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
